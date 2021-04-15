@@ -12,6 +12,12 @@ public class NumberDifference {
 		for(int i=0;i<m;i++) {
 			c[i]=str.charAt(i);
 		}
+		if(m==1){
+			System.out.println(c[0]);
+		}else if(m==2){
+			int a = Math.abs((int)(c[0])-(int)(c[1]));
+			System.out.println(a);
+		}else{
 		int b[]=new int[m];
 		int[] arr=new int[m];
 		for(int i=0;i<m;i++) {
@@ -22,5 +28,6 @@ public class NumberDifference {
 			System.out.print(b[i]);
 		}
 		System.out.println(c[m-1]);
+		}
 	}
 }
